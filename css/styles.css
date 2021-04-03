@@ -1,0 +1,24 @@
+/* Web Fonts */
+@font-face {
+    font-family: 'Fascinate', cursive;
+}
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+}
+/* Base Element Styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Quicksand", sans-serif;
+
+}
+/* Base Layouts Styles */
+.banner {
+}
+
+/* Layout Containers */
+
+
+/* Media Queries */
+
