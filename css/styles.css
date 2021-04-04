@@ -5,20 +5,66 @@
 @font-face {
     font-family: 'Quicksand', sans-serif;
 }
+
 /* Base Element Styles */
 * {
     box-sizing: border-box;
 }
 body {
     font-family: "Quicksand", sans-serif;
-
+    line-height: 1.6;
+    font-weight: 300;
+}
+h1,
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+p {
+   font-size: 1.1em;
+    margin-bottom: 1.1em;
+}
+h1 {
+    color: ghostwhite;
+    font-size: 2.5em;
+    text-align: center;
+}
+form {
+    background: #fff;
+    padding: 4em 4em 2em;
+    max-width: 400px;
+    margin: 50px auto 0;
+    /*box-shadow: 0 0 1em #222;*/
+    border-radius: 5px;
 }
 /* Base Layouts Styles */
-.banner {
+.thick-line {
+    border-bottom: 5px solid #4682b4;
+    display: block;
+    margin: 20px 15px 10px 15px;
+}
+.thin-line {
+    border-bottom: 2px solid #4682b4;
+    display: block;
+    margin: 0 15px 20px 15px;
+}
+.logo {
+    background-color: #4682b4;
 }
 
+
 /* Layout Containers */
+.info-banner {
+    margin: 5px 15px 15px 10px;
+    text-align: center;
+
+}
 
 
 /* Media Queries */
+@media (min-width: 768px) {
+    body {
+        padding-top: 20px;
+    }
+}
 
