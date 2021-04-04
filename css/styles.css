@@ -9,6 +9,7 @@
 /* Base Element Styles */
 * {
     box-sizing: border-box;
+    margin: auto;
 }
 body {
     font-family: "Quicksand", sans-serif;
@@ -27,7 +28,6 @@ p {
     color: #212121;
 }
 h1 {
-    color: ghostwhite;
     font-size: 2.5em;
     text-align: center;
 }
@@ -36,37 +36,59 @@ h2 {
 }
 form {
     background: #fff;
-    /*padding: ;*/
     max-width: 400px;
-    margin: 15px 10px 0;
-    /*box-shadow: 0 0 1em #222;*/
-    /*border-radius: 5px;*/
+    border-radius: 5px;
+    align-content: space-around;
 }
 legend {
+    width: 100%;
     color: #33414f;
     font-size: 1.5em;
+    border-top: 2px solid #33414f;
+
+}
+fieldset {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+
+}
+button {
+    padding: 20px 40px 20px 40px;
+    color: #ffffff;
+    background-color: #11708c;
+    font-size: 20px;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid #33414f;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+
 }
 
-/* Base Layouts Styles */
+ /*Base Layouts Styles */
 .thick-line {
-    border-bottom: 5px solid #33414f;
+    border-top: 5px solid #33414f;
     display: block;
-    margin: 20px 15px 10px 15px;
-}
-.thin-line {
-    border-bottom: 2px solid #33414f;
-    display: block;
-    margin: 0 15px 20px 15px;
+    margin: 0;
+    /*width: 100%;*/
 }
 .logo {
-    background-color: #33414f;
+    background: #33414f;
+    padding: 15px;
+    color: #ffffff;
 }
 
 
 /* Layout Containers */
 .info-banner {
-    margin: 5px 15px 15px 10px;
+    max-width: 400px;
+    margin: 10px auto;
     text-align: center;
+    border-bottom: 5px solid #33414f;
+
 
 }
 .container-contact {

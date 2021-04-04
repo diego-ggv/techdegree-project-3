@@ -30,11 +30,9 @@
 </header>
 
 <main>
-    <span class="thick-line"></span>
-    <span class="thin-line"></span>
     <!--    form goes here -->
     <form action="index.html" method="post">
-        <fieldset>
+        <fieldset class="thin-line">
             <legend>Contact Information</legend>
             <div class="container-contact">
                 <label for="username">Full Name</label>
@@ -44,10 +42,9 @@
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="user-email"
                        placeholder="Required" required>
-
+<!--todo: format for phone number-->
                 <label for="phone">Pone Number</label>
-                <input type="tel" id="phone" name="user-phone"
-                       placeholder="Format (000)-000-0000">
+                <input type="tel" id="phone" name="user-phone">
 
                 <label for="address">Street Address</label>
                 <input type="text" id="address" name="user-address">
@@ -118,15 +115,26 @@
             </div>
 
         </fieldset>
-        <span class="thin-line"></span>
 
         <fieldset>
             <legend>Newsletter</legend>
             <label>Select the newsletters you would like to receive</label>
             <div>
-                <input>
+<!--                <input>-->
             </div>
+            <div>
+            <label>Newsletter format</label>
 
+            </div>
+            <div>
+                <label for="comments">Other topics you'd like to hear
+                    about</label>
+                <textarea id="comments" name="user-comments"
+                          placeholder="Tell us more"></textarea>
+            </div>
+            <div>
+                <button type="submit">Sing Up</button>
+            </div>
 
         </fieldset>
     </form>
