@@ -44,12 +44,14 @@ legend {
     width: 100%;
     color: #33414f;
     font-size: 1.5em;
-    border-top: 2px solid #33414f;
+    padding-top: 25px;
+    background-color: none;
 
 }
 fieldset {
     width: 100%;
     border: none;
+    margin-top: 15px;
     margin-bottom: 20px;
 
 }
@@ -67,14 +69,25 @@ button {
     margin-bottom: 10px;
 
 }
-
+i {
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+}
  /*Base Layouts Styles */
 .thick-line {
     border-top: 5px solid #33414f;
     display: block;
+    margin: 5px;
+    /*width: 100%;*/
+}
+.thin-line {
+    border-top: 2px solid #33414f;
+    display: block;
     margin: 0;
     /*width: 100%;*/
 }
+
 .logo {
     background: #33414f;
     padding: 15px;
@@ -87,7 +100,7 @@ button {
     max-width: 400px;
     margin: 10px auto;
     text-align: center;
-    border-bottom: 5px solid #33414f;
+    /*border-bottom: 5px solid #33414f;*/
 
 
 }
