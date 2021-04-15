@@ -36,34 +36,34 @@
             <hr class="thin-line">
             <fieldset>
                 <legend>Contact Information</legend>
-                <div class="field">
+                <div class="field-user">
                     <div>
                         <label for="username">Full Name</label>
-                        <input class="field" type="text" id="username"
+                        <input type="text" id="username"
                                name="user-full-name"
                                placeholder="Required" required>
                     </div>
                     <div>
                         <label for="email">Email Address</label>
-                        <input class="field" type="email" id="email" name="user-email"
+                        <input type="email" id="email" name="user-email"
                                placeholder="Required" required>
                     </div>
                     <!--todo: format for phone number-->
                     <div>
                         <label for="phone">Pone Number</label>
-                        <input class="field" type="tel" id="phone" name="user-phone">
+                        <input type="tel" id="phone" name="user-phone">
                     </div>
                     <div>
                         <label for="address">Street Address</label>
-                        <input class="field" type="text" id="address" name="user-address">
+                        <input type="text" id="address" name="user-address">
                     </div>
                     <div>
                         <label for="city">City</label>
-                        <input class="field" type="text" id="city" name="user-city">
+                        <input type="text" id="city" name="user-city">
                     </div>
                     <div>
                         <label for="state">State</label>
-                        <select class="field" id="state" name="user-state" required>
+                        <select id="state" name="user-state" required>
                             <option value="" disabled selected hidden>Select an
                                 option
                             </option>
@@ -121,8 +121,9 @@
                         </select>
                     </div>
                     <div>
-                        <label for="zip">Zip Code</label>
-                        <input class="field" type="text" id="zip" name="user-zipcode"
+                        <label class="zip" for="zip">Zip Code</label>
+                        <input type="text" id="zip"
+                               name="user-zipcode"
                                pattern="[0-9]*"
                                placeholder="Format: 96716">
                     </div>
@@ -131,42 +132,49 @@
             <hr class="thin-line">
             <fieldset>
                 <legend>Newsletter</legend>
-                <label class="spacer">Select the newsletters you would like to
-                    receive</label>
-                <div class="spacer">
-                    <div>
-                        <input type="checkbox" id="html-news" value="html-news"
-                               name="newsletters"><label for="html-news">HTML
-                        News</label>
+                <div class="field-news">
+                    <label class="spacer">Select the newsletters you would like
+                        to
+                        receive</label>
+                    <div class="spacer">
+                        <div>
+                            <input type="checkbox" id="html-news"
+                                   value="html-news"
+                                   name="newsletters"><label for="html-news">HTML
+                            News</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="css-news"
+                                   value="css-news"
+                                   name="newsletters">
+                            <label for="css-news">CSS News</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="js-news" value="js-news"
+                                   name="newsletters">
+                            <label for="js-news">Javascript News</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox" id="css-news" value="css-news"
-                               name="newsletters">
-                        <label for="css-news">CSS News</label>
+                    <label>Newsletter format</label>
+                    <div class="spacer">
+                        <div>
+                            <input type="radio" id="html" value="html"
+                                   name="news-format"><label
+                                for="html">HTML</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="plain-text"
+                                   value="plain-text"
+                                   name="news-format"><label for="plain-text">Plain
+                            text</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox" id="js-news" value="js-news"
-                               name="newsletters">
-                        <label for="js-news">Javascript News</label>
-                    </div>
-                </div>
-                <label>Newsletter format</label>
-                <div class="spacer">
-                    <div>
-                        <input type="radio" id="html" value="html"
-                               name="news-format"><label for="html">HTML</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="plain-text" value="plain-text"
-                               name="news-format"><label for="plain-text">Plain
-                        text</label>
-                    </div>
-                </div>
-                <label class="spacer" for="comments">Other topics
-                    you'd like to hear about</label>
-                <div class="spacer">
+                    <label class="spacer" for="comments">Other topics
+                        you'd like to hear about</label>
+                    <div class="spacer">
                     <textarea id="comments" name="user-comments"
                               placeholder="Tell us more"></textarea>
+                    </div>
                 </div>
             </fieldset>
             <button class="bttn" type="submit">Sing Up</button>

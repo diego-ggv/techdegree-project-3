@@ -15,6 +15,7 @@ body {
     line-height: 1.6;
     font-weight: 300;
     color: #212121;
+    margin-top: 0;
 }
 h1,
 h2 {
@@ -28,11 +29,18 @@ p {
     padding: 0 15px;
 }
 h1 {
-    font-size: 2.5em;
+    font-weight: bold;
     text-align: center;
+    margin: auto;
+    font-size: 2em;
 }
 h2 {
+    font-size: 1.5em;
     color: #33414f;
+}
+label{
+    margin-left: 0;
+    margin-right: 5px;
 }
 form {
     background: #fff;
@@ -43,21 +51,15 @@ form {
 legend {
     width: 100%;
     color: #33414f;
-    font-size: 1.5em;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 fieldset {
     width: 100%;
     border: none;
-    margin: 0 auto 20px;
-    padding: 0 15px 0 15px;
-;
-}
-i {
-    text-align: center;
-    display: block;
-    margin: 15px auto 15px;
+    margin-bottom: 10px;
 }
 input,
 select,
@@ -65,15 +67,20 @@ button {
     cursor: pointer;
 }
 textarea {
-    overflow: scroll;
+    overflow: auto;
     width: 100%;
     height: 100px;
     border-radius: 5px;
-    background-color: #e7e7e8;
-    border: none;
+    background-color: rgb(231, 233, 253);
+    border: 1px solid rgb(164, 163, 163);
     padding: 10px;
 }
- /*Base Layouts Styles */
+i {
+    text-align: center;
+    display: block;
+    margin: 15px auto 15px;
+}
+/*Base Layouts Styles */
 .bttn {
     width: 90%;
     padding: 15px 20px 15px 20px;
@@ -90,6 +97,36 @@ textarea {
 .bttn:hover {
     opacity: .75;
 }
+.logo {
+    background: #25508d;
+    padding:20px 5px 10px 5px;
+    color: #ffffff;
+}
+.field-user {
+    background-color: rgba(237, 205, 125, 0.5);
+    border-radius: 20px;
+    padding: 10px 15px 15px;
+}
+.field-news {
+    background-color: rgba(237, 205, 125, 0.5);
+    border-radius: 20px;
+    padding: 10px 15px 10px;
+}
+.error {
+    background-color: crimson;
+}
+.info-banner {
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+}
+.spacer {
+    margin: 5px 0 10px 0;
+    padding-bottom: 5px;
+}
+.zip {
+    max-width: 32%;
+}
 hr.thick-line {
     border-top: 5px solid #33414f;
     border-radius: 5px;
@@ -103,15 +140,6 @@ hr.thin-line {
     box-sizing: border-box;
     margin: 5px;
 }
-.logo {
-    background: #33414f;
-    padding: 10px 5px 10px 5px;
-    color: #ffffff;
-}
-input:focus,
-textarea:focus {
-    background: #efefff;
-}
 input::placeholder {
     text-align: right;
     font-style: italic;
@@ -121,51 +149,50 @@ input::placeholder {
 textarea::placeholder {
     padding: 5px;
 }
-.error {
-    background-color: crimson;
-}
-
-
-/* Layout Containers */
-.info-banner {
-    max-width: 400px;
-    margin: 10px auto;
-    text-align: center;
-}
-.spacer {
-    margin: 5px 0 10px 0;
-    padding-bottom: 5px;
-}
-[type="radio"],
-[type="checkbox"]{
-    margin-right: 10px;
-}
-
-div[class="field"] input, select {
+div[class="field-user"] input, select {
     width: 100%;
     border-radius: 5px;
-    background-color: #e7e7e8;
-    border: none;
+    background-color: rgb(231, 233, 253);
+    border: 1px solid rgb(164, 163, 163);
     font-size: 16px;
     height: 35px;
     margin: 5px 0;
     padding: 5px 5px;
 }
+div[class="field-user"] input:focus,
+textarea:focus {
+    background: rgb(223, 255, 246);
+}
+
+div[class="field-user"], [class="field-news"] label {
+    color: rgb(38, 38, 38);
+}
+[type="radio"],
+[type="checkbox"]{
+    margin-right: 10px;
+}
+#zip {
+    max-width: 35%;
+    margin-left: 0;
+    display: block;
+}
+
 
 /* Media Queries */
 @media (min-width: 768px) {
-    body {
-        padding-top: 20px;
-    }
-    #zip {
-        width: 35%;
-        margin-left: 15px;
-    }
-    /*div[class=".container"] > label {*/
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*    !*flex-wrap: wrap;*!*/
-    /*    justify-content: space-evenly;*/
+    /*#zip{*/
+    /*    justify-content: flex-start;*/
     /*}*/
+    .logo {
+        font-size: 2em;
+        padding: 35px 0 15px;
+    }
+    div[class="field-user"] div {
+        display: flex;
+    }
+    div[class="field-user"] div > label {
+        flex-basis: 48%;
+    }
+
 
 }
