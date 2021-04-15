@@ -103,12 +103,12 @@ i {
     color: #ffffff;
 }
 .field-user {
-    background-color: rgba(237, 205, 125, 0.5);
+    background-color: rgba(237, 205, 125, 0.3);
     border-radius: 20px;
     padding: 10px 15px 15px;
 }
 .field-news {
-    background-color: rgba(237, 205, 125, 0.5);
+    background-color: rgba(237, 205, 125, 0.3);
     border-radius: 20px;
     padding: 10px 15px 10px;
 }
@@ -140,7 +140,15 @@ hr.thin-line {
     box-sizing: border-box;
     margin: 5px;
 }
-input::placeholder {
+select{
+    color: rgb(128, 128, 128);
+}
+option {
+    color: rgb(33, 33, 33);
+}
+/*!*  todo: create an error report *!*/
+input::placeholder
+ {
     text-align: right;
     font-style: italic;
     font-size: 12px;
@@ -159,16 +167,14 @@ div[class="field-user"] input, select {
     margin: 5px 0;
     padding: 5px 5px;
 }
-div[class="field-user"] input:focus,
-textarea:focus {
+div[class="field-user"] input:focus, textarea:focus {
     background: rgb(223, 255, 246);
 }
-
 div[class="field-user"], [class="field-news"] label {
     color: rgb(38, 38, 38);
 }
 [type="radio"],
-[type="checkbox"]{
+[type="checkbox"] {
     margin-right: 10px;
 }
 #zip {
@@ -180,9 +186,7 @@ div[class="field-user"], [class="field-news"] label {
 
 /* Media Queries */
 @media (min-width: 768px) {
-    /*#zip{*/
-    /*    justify-content: flex-start;*/
-    /*}*/
+
     .logo {
         font-size: 2em;
         padding: 35px 0 15px;
@@ -193,6 +197,5 @@ div[class="field-user"], [class="field-news"] label {
     div[class="field-user"] div > label {
         flex-basis: 48%;
     }
-
 
 }
