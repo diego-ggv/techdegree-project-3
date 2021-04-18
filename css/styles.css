@@ -2,14 +2,17 @@
 @font-face {
     font-family: 'Fascinate', cursive;
 }
+
 @font-face {
     font-family: 'Quicksand', sans-serif;
 }
+
 /* Base Element Styles */
 * {
     box-sizing: border-box;
     margin: auto;
 }
+
 body {
     font-family: "Quicksand", sans-serif;
     line-height: 1.6;
@@ -17,37 +20,44 @@ body {
     color: #212121;
     margin-top: 0;
 }
+
 h1,
 h2 {
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
 }
+
 p {
-   font-size: 1.1em;
+    font-size: 1.1em;
     margin: 5px 0;
     color: #212121;
     padding: 0 15px;
 }
+
 h1 {
     font-weight: bold;
     text-align: center;
     margin: auto;
     font-size: 2em;
 }
+
 h2 {
     font-size: 1.5em;
     color: #33414f;
 }
-label{
+
+label {
     margin-left: 0;
     margin-right: 5px;
 }
+
 form {
     background: #fff;
     max-width: 400px;
     border-radius: 5px;
     align-content: space-around;
 }
+
 legend {
     width: 100%;
     color: #33414f;
@@ -56,16 +66,19 @@ legend {
     font-size: 1.2em;
     font-weight: bold;
 }
+
 fieldset {
     width: 100%;
     border: none;
     margin-bottom: 10px;
 }
+
 input,
 select,
 button {
     cursor: pointer;
 }
+
 textarea {
     overflow: auto;
     width: 100%;
@@ -75,11 +88,13 @@ textarea {
     border: 1px solid rgb(164, 163, 163);
     padding: 10px;
 }
+
 i {
     text-align: center;
     display: block;
     margin: 15px auto 15px;
 }
+
 /*Base Layouts Styles */
 .bttn {
     width: 90%;
@@ -94,39 +109,48 @@ i {
     box-shadow: 0 -1px 0 #212121 inset;
     margin: 5px 15px 10px 15px;
 }
+
 .bttn:hover {
     opacity: .75;
 }
+
 .logo {
     background: #25508d;
-    padding:20px 5px 10px 5px;
+    padding: 20px 5px 10px 5px;
     color: #ffffff;
 }
+
 .field-user {
     background-color: rgba(237, 205, 125, 0.3);
     border-radius: 20px;
     padding: 10px 15px 15px;
 }
+
 .field-news {
     background-color: rgba(237, 205, 125, 0.3);
     border-radius: 20px;
     padding: 10px 15px 10px;
 }
+
 .error {
     background-color: crimson;
 }
+
 .info-banner {
     max-width: 400px;
     margin: 10px auto;
     text-align: center;
 }
+
 .spacer {
     margin: 5px 0 10px 0;
     padding-bottom: 5px;
 }
+
 .zip {
     max-width: 32%;
 }
+
 hr.thick-line {
     border-top: 5px solid #33414f;
     border-radius: 5px;
@@ -134,29 +158,33 @@ hr.thick-line {
     margin: 5px;
     box-sizing: border-box;
 }
+
 hr.thin-line {
     border-top: 2px solid #33414f;
     border-radius: 3px;
     box-sizing: border-box;
     margin: 5px;
 }
-select{
+
+select {
     color: rgb(128, 128, 128);
 }
+
 option {
     color: rgb(33, 33, 33);
 }
-/*!*  todo: create an error report *!*/
-input::placeholder
- {
+
+input::placeholder {
     text-align: right;
     font-style: italic;
     font-size: 12px;
     padding-right: 10px;
 }
+
 textarea::placeholder {
     padding: 5px;
 }
+
 div[class="field-user"] input, select {
     width: 100%;
     border-radius: 5px;
@@ -167,22 +195,38 @@ div[class="field-user"] input, select {
     margin: 5px 0;
     padding: 5px 5px;
 }
+
 div[class="field-user"] input:focus, textarea:focus {
     background: rgb(223, 255, 246);
 }
+
 div[class="field-user"], [class="field-news"] label {
     color: rgb(38, 38, 38);
 }
+
 [type="radio"],
 [type="checkbox"] {
     margin-right: 10px;
 }
+
 #zip {
     max-width: 35%;
     margin-left: 0;
     display: block;
 }
 
+input[type="email"],
+input[type="tel"],
+input[type="name"],
+input[type="text"],
+input[type="city"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+textarea {
+    outline: 0;
+    transition: all 1s ease-out;
+}
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -191,9 +235,11 @@ div[class="field-user"], [class="field-news"] label {
         font-size: 2em;
         padding: 35px 0 15px;
     }
+
     div[class="field-user"] div {
         display: flex;
     }
+
     div[class="field-user"] div > label {
         flex-basis: 48%;
     }
